@@ -182,7 +182,7 @@
             <mxPoint x="2450" y="960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OmRy-A9nD_p67kqgjEia-5" value="throttle_trim = _param_fw_thr_trim.get() - slope_below_trim * (_param_fw_airspd_trim.get() - calibrated_airspeed_sp);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="OmRy-A9nD_p67kqgjEia-5" value="throttle_trim = _param_fw_thr_trim.get() + slope_above_trim * (calibrated_airspeed_sp - _param_fw_airspd_trim.get());" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2272.5" y="960" width="355" height="60" as="geometry" />
         </mxCell>
       </root>
