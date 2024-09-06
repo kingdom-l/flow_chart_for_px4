@@ -145,7 +145,7 @@
             <mxPoint x="1770" y="805" as="targetPoint" />
             <mxPoint x="1780" y="790" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="1582" y="920" />
+              <mxPoint x="1582" y="1090" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -165,21 +165,35 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="OmRy-A9nD_p67kqgjEia-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OmRy-A9nD_p67kqgjEia-0" target="rS4UES4o4Pbf3BBduXtB-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OmRy-A9nD_p67kqgjEia-0" value="throttle_trim = _param_fw_thr_trim.get() - slope_below_trim * (_param_fw_airspd_trim.get() - calibrated_airspeed_sp);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1882.5" y="960" width="355" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OmRy-A9nD_p67kqgjEia-1" value="PX4_ISFINITE(calibrated_airspeed_sp) &amp;amp;&amp;amp; PX4_ISFINITE(slope_above_trim" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2300" y="850" width="300" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="OmRy-A9nD_p67kqgjEia-2" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="OmRy-A9nD_p67kqgjEia-1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="OmRy-A9nD_p67kqgjEia-2" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="OmRy-A9nD_p67kqgjEia-1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="rS4UES4o4Pbf3BBduXtB-20">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="2680" y="850" as="targetPoint" />
             <mxPoint x="2620" y="890" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="2640" y="890" />
+              <mxPoint x="2640" y="1090" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OmRy-A9nD_p67kqgjEia-3" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="OmRy-A9nD_p67kqgjEia-1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="OmRy-A9nD_p67kqgjEia-5">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="2450" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OmRy-A9nD_p67kqgjEia-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OmRy-A9nD_p67kqgjEia-5" target="rS4UES4o4Pbf3BBduXtB-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2450" y="1075" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OmRy-A9nD_p67kqgjEia-5" value="throttle_trim = _param_fw_thr_trim.get() + slope_above_trim * (calibrated_airspeed_sp - _param_fw_airspd_trim.get());" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
