@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.12">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1736" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2083" dy="1176" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -119,20 +119,17 @@
         <mxCell id="rS4UES4o4Pbf3BBduXtB-13" value="slope_below_trim=&lt;span style=&quot;background-color: initial;&quot;&gt;(_param_fw_thr_trim.get() - _param_fw_thr_aspd_min.get()) /&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;(_param_fw_airspd_trim.get() - _param_fw_airspd_min.get());&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1820" y="690" width="480" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rS4UES4o4Pbf3BBduXtB-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-14" target="rS4UES4o4Pbf3BBduXtB-20">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2060" y="900" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="2060" y="850" />
-              <mxPoint x="2060" y="850" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-14" value="&lt;div&gt;slope_above_trim = (_param_fw_thr_aspd_max.get() - _param_fw_thr_trim.get()) /&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&#x9;&lt;/span&gt;&amp;nbsp;(_param_fw_airspd_max.get() - _param_fw_airspd_trim.get());&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1820" y="770" width="480" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-14" target="rS4UES4o4Pbf3BBduXtB-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2060" y="860" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-20" value="return throttle_trim" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2008" y="890" width="120" height="60" as="geometry" />
+          <mxGeometry x="2030" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-27" value="callback&amp;nbsp;&lt;span style=&quot;font-size: 12px; text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;getTrimThrottleForCalibratedAirspeed&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.883;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" target="rS4UES4o4Pbf3BBduXtB-13" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-7">
           <mxGeometry relative="1" as="geometry">
@@ -149,6 +146,27 @@
             <mxPoint x="1780" y="790" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="1582" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-30" value="calibrated_airspeed_sp &amp;lt; _param_fw_airspd_trim.get()" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1865" y="870" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-31" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="rS4UES4o4Pbf3BBduXtB-30" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="2290" y="1010" as="targetPoint" />
+            <mxPoint x="2110" y="890" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="2290" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-32" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="rS4UES4o4Pbf3BBduXtB-30" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="2060" y="970" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2060" y="950" />
+              <mxPoint x="2060" y="950" />
             </Array>
           </mxGeometry>
         </mxCell>
