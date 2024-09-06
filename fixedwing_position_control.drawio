@@ -104,8 +104,14 @@
         <mxCell id="rS4UES4o4Pbf3BBduXtB-3" value="tecs_update_pitch_throttle()" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="430" y="750" width="170" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-5" target="rS4UES4o4Pbf3BBduXtB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-5" value="_performance_model.getTrimThrottle()" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="705" y="750" width="225" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-7" value="throttle_trim=getTrimThrottleForCalibratedAirspeed(airspeed_sp)*getAirDensityThrottlescale(air_density)" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1062.5" y="750" width="587.5" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
