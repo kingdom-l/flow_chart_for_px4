@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.12">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1562" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2231" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -117,8 +117,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1910" y="730" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1730" y="730" />
-              <mxPoint x="1730" y="730" />
+              <mxPoint x="1760" y="610" />
+              <mxPoint x="1750" y="610" />
+              <mxPoint x="1750" y="620" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -128,16 +129,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-9" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1650" y="730" width="50" height="100" as="geometry" />
+          <mxGeometry x="1700" y="620" width="60" height="320" as="geometry" />
         </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-13" target="rS4UES4o4Pbf3BBduXtB-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-13" value="slope_below_trim=&lt;span style=&quot;background-color: initial;&quot;&gt;(_param_fw_thr_trim.get() - _param_fw_thr_aspd_min.get()) /&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;(_param_fw_airspd_trim.get() - _param_fw_airspd_min.get());&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1910" y="700" width="480" height="60" as="geometry" />
+          <mxGeometry x="1950" y="590" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-14" target="rS4UES4o4Pbf3BBduXtB-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2190" y="810" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="rS4UES4o4Pbf3BBduXtB-14" value="&lt;div&gt;slope_above_trim = (_param_fw_thr_aspd_max.get() - _param_fw_thr_trim.get()) /&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&#x9;&lt;/span&gt;&amp;nbsp;(_param_fw_airspd_max.get() - _param_fw_airspd_trim.get());&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1910" y="800" width="480" height="60" as="geometry" />
+          <mxGeometry x="1950" y="680" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rS4UES4o4Pbf3BBduXtB-7" target="rS4UES4o4Pbf3BBduXtB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rS4UES4o4Pbf3BBduXtB-20" value="return throttle_trim" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2130" y="780" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
